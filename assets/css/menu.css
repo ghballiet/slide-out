@@ -1,7 +1,10 @@
+body.slid {
+  overflow: hidden;
+}
 .main .screen {
   background: rgba(0, 0, 0, 0.8);
   width: 100%;
-  height: 100%;
+  height: 2100px;
   position: absolute;
   opacity: 0;
   top: 0;
@@ -35,11 +38,10 @@
   margin-right: 240px;
 }
 .slide {
-  position: absolute;
+  position: fixed;
   width: 200px;
   box-shadow: -2px 0 7px rgba(0, 0, 0, 0.4) inset;
   background: #fff;
-  height: 100%;
   top: 0;
   z-index: 9999;
   -webkit-transition-property: left, margin-left;
@@ -48,6 +50,8 @@
 }
 .slide.show {
   display: block;
+  overflow: scroll;
+  height: 100%;
 }
 .slide.slide-left {
   left: -200px;
