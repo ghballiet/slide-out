@@ -24,19 +24,23 @@
       <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
           <div class="container">
-            <a class="brand" href="#">slide</a>
-            <ul class="nav pull-right">
-              <li><a class="click-right" href="#">right</a></li>
-            </ul>
+            <a class="btn btn-navbar left-menu">
+              <i class="icon-align-justify"></i>
+            </a>
+            <a class="btn btn-navbar user-menu">
+              <i class="icon-user"></i>
+            </a>
+            <a class="brand">slider</a>
           </div>
         </div>
       </div>
 
       <div class="container">
         <div class="jumbotron">
-          <h1>sliding facebook app testing.</h1>
+          <h1>slideout app testing.</h1>
           <p class="lead">let's see if this works.</p>
         </div>
+        <hr>
         <div class="row">
           <div class="span4">
             <h3>Subheading</h3>

@@ -1,12 +1,15 @@
 @import "variables.less";
 
-@slide-width: 200px;
+@slide-width: 260px;
 @item-padding: 14px;
-@slide-amt: @slide-width + (2 * @gridGutterWidth);
+// @slide-amt: @slide-width + (2 * @gridGutterWidth);
+@slide-amt: @slide-width;
 
 body.slid {
     overflow: hidden;
 }
+
+.navbar .left-menu { float: left; }
 
 .main {
     .screen {
@@ -67,6 +70,23 @@ body.slid {
     -webkit-transition-duration: .25s;
     -webkit-transition-timing-function: ease-in-out;
 
+    .navbar {
+        position: fixed;
+        width: @slide-width;
+
+        .navbar-inner {
+            border-radius: 0px;
+            -webkit-border-radius: 0px;
+            -moz-border-radius: 0px;
+        }
+        .navbar-search { float: none; }
+        .search-query {
+            display: block;
+            width: @slide-width - (4 * @gridGutterWidth) - 2px;
+            margin: 0 auto;
+        }
+    }
+
     &.show {
         display: block;
         overflow: scroll;
@@ -85,5 +105,5 @@ body.slid {
 }
 
 .slide-menu {
-    .close { margin-top: -3px; }
+    margin-top: 3 * @gridGutterWidth;
 }

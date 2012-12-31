@@ -11,12 +11,12 @@ function slideRight() {
 }
 
 $(function() {
-    $('.brand, .slide-left .close').click(function(e) {
+    $('.left-menu, .main.slide-right .screen').live('click', function(e) {
         e.preventDefault();
         slideLeft();
     });
 
-    $('.main .click-right, .slide-right .close').click(function(e) {
+    $('.user-menu, .main.slide-left .screen').live('click', function(e) {
         e.preventDefault();
         slideRight();
     });

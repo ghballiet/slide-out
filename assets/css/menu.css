@@ -1,6 +1,9 @@
 body.slid {
   overflow: hidden;
 }
+.navbar .left-menu {
+  float: left;
+}
 .main .screen {
   background: rgba(0, 0, 0, 0.8);
   width: 100%;
@@ -22,24 +25,24 @@ body.slid {
 .main.slide-right .screen {
   z-index: 9999;
   opacity: 1;
-  left: 200px;
+  left: 260px;
 }
 .main.slide-right .container {
-  margin-left: 240px;
-  margin-right: -240px;
+  margin-left: 260px;
+  margin-right: -260px;
 }
 .main.slide-left .screen {
   z-index: 9999;
   opacity: 1;
-  left: -200px;
+  left: -260px;
 }
 .main.slide-left .container {
-  margin-left: -240px;
-  margin-right: 240px;
+  margin-left: -260px;
+  margin-right: 260px;
 }
 .slide {
   position: fixed;
-  width: 200px;
+  width: 260px;
   box-shadow: -2px 0 7px rgba(0, 0, 0, 0.4) inset;
   background: #fff;
   top: 0;
@@ -48,13 +51,30 @@ body.slid {
   -webkit-transition-duration: .25s;
   -webkit-transition-timing-function: ease-in-out;
 }
+.slide .navbar {
+  position: fixed;
+  width: 260px;
+}
+.slide .navbar .navbar-inner {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+}
+.slide .navbar .navbar-search {
+  float: none;
+}
+.slide .navbar .search-query {
+  display: block;
+  width: 178px;
+  margin: 0 auto;
+}
 .slide.show {
   display: block;
   overflow: scroll;
   height: 100%;
 }
 .slide.slide-left {
-  left: -200px;
+  left: -260px;
 }
 .slide.slide-left.show {
   left: 0;
@@ -63,8 +83,8 @@ body.slid {
   left: 100%;
 }
 .slide.slide-right.show {
-  margin-left: -200px;
+  margin-left: -260px;
 }
-.slide-menu .close {
-  margin-top: -3px;
+.slide-menu {
+  margin-top: 60px;
 }
